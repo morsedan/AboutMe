@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//         print("My name is Dan")
         nameLabel.text = ""
         hobbiesLabel.text = ""
     }
