@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //         print("My name is Dan")
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
     }
     
     @IBAction func introduceYourselfButtonPressed(_ sender: Any) {
