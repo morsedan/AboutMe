@@ -42,6 +42,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGu-2O-VlG">
+                                <rect key="frame" x="105.5" y="818" width="203" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7S-xq-TOe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -52,10 +60,16 @@
                             <constraint firstItem="QRE-hV-cme" firstAttribute="leading" secondItem="iS6-G0-6Nt" secondAttribute="trailing" constant="8" symbolic="YES" id="EPA-w3-edh"/>
                             <constraint firstItem="4Lf-bg-eJy" firstAttribute="baseline" secondItem="0mB-GH-Y7R" secondAttribute="baseline" id="S3g-lX-vlW"/>
                             <constraint firstItem="4Lf-bg-eJy" firstAttribute="top" secondItem="iS6-G0-6Nt" secondAttribute="bottom" constant="8" symbolic="YES" id="TG2-rv-Sq2"/>
+                            <constraint firstItem="KGu-2O-VlG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b4v-dG-I1D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KGu-2O-VlG" secondAttribute="bottom" id="ick-ZL-kxC"/>
                             <constraint firstItem="iS6-G0-6Nt" firstAttribute="leading" secondItem="4Lf-bg-eJy" secondAttribute="leading" id="wSK-jE-27C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="0mB-GH-Y7R" id="VYe-Wa-fRm"/>
+                        <outlet property="nameLabel" destination="QRE-hV-cme" id="5us-in-Q0x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
